@@ -30,6 +30,8 @@
 *.vrb
 *.xdy
 *.tdo
+*.pdf
+*.fls
 
 # Sublime text
 *.sublime-workspace
