@@ -32,6 +32,7 @@
 *.tdo
 *.pdf
 *.fls
+*.thm
 
 # Sublime text
 *.sublime-workspace
