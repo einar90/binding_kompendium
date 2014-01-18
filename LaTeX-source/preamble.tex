@@ -2,6 +2,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage{babel}
+\usepackage{fancyhdr} 
 
 \usepackage{geometry}
 \geometry{verbose,lmargin=3.5cm,rmargin=3.5cm}
@@ -24,7 +25,9 @@
 \usepackage{makeidx}
 \makeindex
 
+%---------------------------------
 % Hyperlink setup
+%---------------------------------
 \usepackage[unicode=true,
  bookmarks=true,bookmarksnumbered=true,bookmarksopen=false,
  breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
@@ -32,46 +35,23 @@
 \hypersetup{pdftitle={Binding Notater},
  pdfauthor={Einar Baumann}}
 
-\makeatletter
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
-  \theoremstyle{definition}
-  \ifx\thechapter\undefined
-    \newtheorem{defn}{\protect\definitionname}
-  \else
-    \newtheorem{defn}{\protect\definitionname}[chapter]
-  \fi
-  \theoremstyle{definition}
-  \ifx\thechapter\undefined
-    \newtheorem{example}{\protect\examplename}
-  \else
-    \newtheorem{example}{\protect\examplename}[chapter]
-  \fi
-  \theoremstyle{remark}
-  \ifx\thechapter\undefined
-    \newtheorem{rem}{\protect\remarkname}
-  \else
-    \newtheorem{rem}{\protect\remarkname}[chapter]
-  \fi
-  \theoremstyle{plain}
-  \ifx\thechapter\undefined
-    \newtheorem{cor}{\protect\corollaryname}
-  \else
-    \newtheorem{cor}{\protect\corollaryname}[chapter]
-  \fi
-\newenvironment{lyxlist}[1]
-{\begin{list}{}
-{\settowidth{\labelwidth}{#1}
- \setlength{\leftmargin}{\labelwidth}
- \addtolength{\leftmargin}{\labelsep}
- \renewcommand{\makelabel}[1]{##1\hfil}}}
-{\end{list}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
-\usepackage{fancyhdr} 
+%---------------------------------
+% Custom environment definitions
+%---------------------------------
+\theoremstyle{definition}
+\newtheorem{defn}{\protect\definitionname}[chapter]
 
-\makeatother
+\theoremstyle{definition}
+\newtheorem{example}{\protect\examplename}[chapter]
 
+\theoremstyle{remark}
+\newtheorem{rem}{\protect\remarkname}[chapter]
+
+%---------------------------------
+% Translations
+%---------------------------------
 \addto\captionsenglish{\renewcommand{\corollaryname}{Corollary}}
 \addto\captionsenglish{\renewcommand{\definitionname}{Definition}}
 \addto\captionsenglish{\renewcommand{\examplename}{Example}}
