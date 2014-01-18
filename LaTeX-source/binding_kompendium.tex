@@ -1,48 +1,7 @@
 \input{preamble.tex}
 
-\begin{document}
-\global\long\def\xfrac{\frac{\partial}{\partial x}}
-
-
-\global\long\def\tfrac{\frac{\partial}{\partial t}}
-
-
-\global\long\def\xtofrac{\frac{\partial^{2}}{\partial x^{2}}}
-
-
-\global\long\def\ttofrac{\frac{\partial^{2}}{\partial t^{2}}}
-
-
-\global\long\def\infint{\int\limits _{-\infty}^{\infty}}
-
-
-\global\long\def\abint{\int\limits _{a}^{b}}
-
-
-\global\long\def\cel{^{\circ}C}
-
-
-\global\long\def\hom{\hat{\Omega}}
-
-
-\global\long\def\ke{\frac{1}{4\pi\epsilon_{0}}}
-
-
-\global\long\def\ps{\Psi^{\star}}
-
-
-\global\long\def\hb{\hbar}
-
-
-\global\long\def\tn{\tilde{\nu}}
-
-
-
 \title{Kompendium i Kjemisk binding, spektroskopi og kinetikk (KJ1041)}
-
-
 \author{Einar Baumann}
-
 \maketitle
 \thispagestyle{empty}
 
@@ -63,8 +22,7 @@ der det trengs, og jeg skal etterhvert få byttet ut figurene med noen
 hjemmelagde.
 
 Hvis du vil hjelpe til med å gjøre kompendiet bedre, men ikke vet
-hvordan, kan du lese guiden på denne adressen: \url{https://help.github.com/articles/fork-a-repo}.
-Alle bidrag vil nevnes i denne innledningen etterhvert som de blir
+hvordan, kan du lese guiden på denne adressen: \url{https://help.github.com/articles/fork-a-repo}. Alle bidrag vil nevnes i denne innledningen etterhvert som de blir
 tatt inn.
 
 \pagebreak{}
@@ -102,7 +60,7 @@ $\varepsilon$ & Energitetthet & $1\mathrm{J/m^{3}}$\tabularnewline
 $E$ & Energi & \tabularnewline
 $k$ & Boltzmanns konstant, $k=1,381\times10^{-23}$ & $1\mathrm{J/K}$\tabularnewline
 $h$ & Plancks konstant, $h=6,626\times10^{-34}$ & $1\mathrm{J\cdot s}$\tabularnewline
-$\hb$ & $\hbar=h/2\pi=1,0557\cdot10^{-34}$ & $1\mathrm{J\cdot s}$\tabularnewline
+$\hbar$ & $\hbar=h/2\pi=1,0557\cdot10^{-34}$ & $1\mathrm{J\cdot s}$\tabularnewline
 $P$ & Sannsynlighet, $P=\left|\Psi\right|^{2}\cdot V$ & \tabularnewline
 $p$ & Bevegelsesmengde / impuls & \tabularnewline
 $E_{k}$ & Kinetisk enrergi & \tabularnewline
@@ -120,8 +78,8 @@ $\vec{\mu}$ & Permament elektrisk dipolmoment & \tabularnewline
 $K$ & Kvantetall, angir et element på hovedaksen & \tabularnewline
 $J$  & Rotasjonskvantetall & \tabularnewline
 $\jmath^{2}$ & Kvadratet av størrelsen til vinkelmomentet, $\jmath^{2}=J_{a}^{2}+J_{b}^{2}+J_{c}^{2}$ & \tabularnewline
-$\tilde{B}$ & Rotasjonskonstanten til et molekyl, $\tilde{B}=\frac{\hb}{4\pi cI}$,
-og $\tilde{A}=\frac{\hb}{4\pi cI_{\parallel}}$, $\tilde{B}=\frac{\hb}{4\pi I_{\perp}}$ & \tabularnewline
+$\tilde{B}$ & Rotasjonskonstanten til et molekyl, $\tilde{B}=\frac{\hbar}{4\pi cI}$,
+og $\tilde{A}=\frac{\hbar}{4\pi cI_{\parallel}}$, $\tilde{B}=\frac{\hbar}{4\pi I_{\perp}}$ & \tabularnewline
 $\tilde{F}\left(J\right)$ & Energi til rotasjonstilstand. Rotasjonsuttrykket. $\tilde{F}\left(J\right)=\tilde{B}J\left(J+1\right)$ & \tabularnewline
 $k_{f}$ & Kraftkonstanten til en binding & \tabularnewline
 $m_{eff}$ & Effektiv masse, $m_{eff}=\frac{m_{1}m_{2}}{m_{1}+m_{2}}$ & \tabularnewline
@@ -178,17 +136,17 @@ Operator & Verdi\tabularnewline
 \endhead
 $\hat{H}$, Hamiltonoperatoren & $\hat{H}=-\frac{\hbar^{2}}{2m}\nabla^{2}+V$\tabularnewline
 $\nabla^{2}$, Laplacian & $\nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}$\tabularnewline
-$\hat{H}$ for hydrogenisk atom & $\hat{H}=\hat{E}_{k,elektron}+\hat{E}_{k,kjerne}+\hat{V}=-\frac{\hb^{2}}{2m_{e}}\nabla_{e}^{2}-\frac{\hb^{2}}{2m_{N}}\nabla_{N}^{2}-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}$\tabularnewline
-$\hat{p}$, Impuls/moment & $\vec{p}=\left[\hat{p}_{x},\hat{p}_{y},\hat{p}_{z}\right]=\frac{\hb}{i}\nabla$,
-$\hat{p}_{x}=\frac{\hb}{i}\frac{d}{dx}$\tabularnewline
+$\hat{H}$ for hydrogenisk atom & $\hat{H}=\hat{E}_{k,elektron}+\hat{E}_{k,kjerne}+\hat{V}=-\frac{\hbar^{2}}{2m_{e}}\nabla_{e}^{2}-\frac{\hbar^{2}}{2m_{N}}\nabla_{N}^{2}-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}$\tabularnewline
+$\hat{p}$, Impuls/moment & $\vec{p}=\left[\hat{p}_{x},\hat{p}_{y},\hat{p}_{z}\right]=\frac{\hbar}{i}\nabla$,
+$\hat{p}_{x}=\frac{\hbar}{i}\frac{d}{dx}$\tabularnewline
 $\vec{r}$, posisjon & $\vec{r}=\left[\hat{x},\hat{y},\hat{z}\right]$, $\hat{x}=x$ (altså
 multiplikasjon med $x$)\tabularnewline
 $\hat{E}_{k}$ & $\hat{E_{k}}=-\frac{\hbar^{2}}{2m}\frac{d^{2}}{dx^{2}}$\tabularnewline
 $\hat{V}$ & $\hat{V}=\frac{1}{2}kx^{2}$ der $k$ er en konstant.\tabularnewline
 $\hat{l}$, Orbitalt vinkelmoment & $\hat{l}=\vec{r}\times\vec{p}=\left(\hat{y}\hat{p}_{z}-\hat{z}\hat{p}_{y}\right)\vec{i}-\left(\hat{x}\hat{p}_{z}-\hat{z}\hat{p}_{x}\right)\vec{j}+\left(\hat{x}\hat{p}_{y}-\hat{y}\hat{p}_{x}\right)\vec{k}$\tabularnewline
-$\hat{l}_{x},\,\hat{l}_{y},\,\hat{l}_{z}$ & $\hat{l}_{x}=\frac{\hb}{i}\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right),\,\hat{l}_{y}=\frac{\hb}{i}\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right),\,\hat{l}_{z}=\frac{\hb}{i}\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)$\tabularnewline
-$\hat{l}^{2}$ & $\hat{l}^{2}=\hat{l}_{x}^{2}+\hat{l}_{y}^{2}+\hat{l}_{z}^{2}=\hb^{2}\Lambda^{2}$\tabularnewline
-$\hat{H},\; H_{2}^{+}$ & $\hat{H}=-\frac{\hb^{2}}{2m_{e}}\nabla_{1}^{2}+V\qquad V=-\frac{e^{2}}{4\pi\varepsilon_{0}}\left(\frac{1}{r_{A1}}+\frac{1}{r_{B1}}-\frac{1}{R}\right)$\tabularnewline
+$\hat{l}_{x},\,\hat{l}_{y},\,\hat{l}_{z}$ & $\hat{l}_{x}=\frac{\hbar}{i}\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right),\,\hat{l}_{y}=\frac{\hbar}{i}\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right),\,\hat{l}_{z}=\frac{\hbar}{i}\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)$\tabularnewline
+$\hat{l}^{2}$ & $\hat{l}^{2}=\hat{l}_{x}^{2}+\hat{l}_{y}^{2}+\hat{l}_{z}^{2}=\hbar^{2}\Lambda^{2}$\tabularnewline
+$\hat{H},\; H_{2}^{+}$ & $\hat{H}=-\frac{\hbar^{2}}{2m_{e}}\nabla_{1}^{2}+V\qquad V=-\frac{e^{2}}{4\pi\varepsilon_{0}}\left(\frac{1}{r_{A1}}+\frac{1}{r_{B1}}-\frac{1}{R}\right)$\tabularnewline
 $\hat{\mu}$, El. dipolmoment for hydrogenisk atom & $\hat{\mu}=-e\vec{r}$, $\hat{\mu}_{x}=-ex$, $\hat{\mu}_{y}=-ey$,
 $\hat{\mu}_{z}=-ez$\tabularnewline
 \hline 
@@ -432,7 +390,7 @@ for å finne et foton i området.
 
 Dermed er $\left|\Psi\right|^{2}$ \emph{sansynlighetstettheten\index{sansynlighetstettheten@\emph{sansynlighetstettheten}}}:
 \begin{equation}
-\left|\Psi\right|^{2}=\ps\Psi
+\left|\Psi\right|^{2}=\Psi^{\star}\Psi
 \end{equation}
  og for å finne sansynligheten må den multipliseres med lengden til
 det infinitesimale området dx (Figur \ref{fig:Sannsynlighet}). Selve
@@ -475,12 +433,12 @@ mulighet for interferens mellom forskjellige bølgefunksjoner.
 En matematisk egenskap ved Schrödingerligningen er at hvis $\Psi$
 er en løsning, er $N\Psi$ også det, der \emph{N} er en hvilken som
 helst konstant. Dermed kan man alltid finne en normaliseringskonstant\index{normaliseringskonstant}
-\emph{N}. En bølgefunksjon er normalisert hvis $\int_{-\infty}^{\infty}\ps\Psi d\tau=1$
+\emph{N}. En bølgefunksjon er normalisert hvis $\int_{-\infty}^{\infty}\Psi^{\star}\Psi d\tau=1$
 (dvs. at sannsynligheten for å finne partikkelen i partikkelen hvor
 som helst i rommet er lik 1).
 
 \begin{equation}
-P=N^{2}\int\ps\Psi d\tau=1\;\implies\; N=\frac{1}{\sqrt{\int\ps\Psi d\tau}}\label{eq:normalisering}
+P=N^{2}\int\Psi^{\star}\Psi d\tau=1\;\implies\; N=\frac{1}{\sqrt{\int\Psi^{\star}\Psi d\tau}}\label{eq:normalisering}
 \end{equation}
 
 
@@ -489,7 +447,7 @@ P=N^{2}\int\ps\Psi d\tau=1\;\implies\; N=\frac{1}{\sqrt{\int\ps\Psi d\tau}}\labe
 
 Borns fortolkningsregel fører til en del begrensninger:
 \begin{itemize}
-\item \emph{$\Psi$ kan ikke være uendelig noen steder}. $\int\ps\Psi d\tau$
+\item \emph{$\Psi$ kan ikke være uendelig noen steder}. $\int\Psi^{\star}\Psi d\tau$
 ville da blitt uendelig, og man ser fra Ligning \ref{eq:normalisering}
 at normaliseringskonstanten da ville blitt 0, slik at bølgefunksjonen
 ville blitt 0 overalt, untatt der den er uendelig, noe som er fysisk
@@ -708,7 +666,7 @@ normalisert)}
 Har videre at hvis $\Psi$ er en normalisert egenfunksjon av $\hat{\Omega}$
 med egenverdi $\omega$, er vorventningsverdien til $\hat{\Omega}$
 \[
-\left\langle \Omega\right\rangle =\int\Psi^{\star}\overset{\omega\Psi}{\overbrace{\hat{\Omega}\Psi}}d\tau=\int\Psi^{\star}\omega\Psi d\tau=\omega\int\overset{\left|\Psi\right|^{2}}{\overbrace{\Psi^{\star}\Psi}}d\tau=\omega\infint\left|\Psi\right|^{2}dx\, dy\, dz=\omega
+\left\langle \Omega\right\rangle =\int\Psi^{\star}\overset{\omega\Psi}{\overbrace{\hat{\Omega}\Psi}}d\tau=\int\Psi^{\star}\omega\Psi d\tau=\omega\int\overset{\left|\Psi\right|^{2}}{\overbrace{\Psi^{\star}\Psi}}d\tau=\omega\int_{-\infty}^{\infty}\left|\Psi\right|^{2}dx\, dy\, dz=\omega
 \]
 
 
@@ -772,7 +730,7 @@ er en egenfunksjon av operatoren som svarer til \emph{r}.\end{example}
 Den kinetiske energien til en partikkel i en dimensjon\index{kinetiske energien til en partikkel i en dimensjon}
 er gitt ved 
 \[
-\left\langle E_{k}\right\rangle =\int\Psi^{\star}\hat{E_{k}}\Psi dx=-\frac{\hbar^{2}}{2m}\int\ps\frac{d^{2}\Psi}{dx^{2}}dx
+\left\langle E_{k}\right\rangle =\int\Psi^{\star}\hat{E_{k}}\Psi dx=-\frac{\hbar^{2}}{2m}\int\Psi^{\star}\frac{d^{2}\Psi}{dx^{2}}dx
 \]
 
 
@@ -1126,7 +1084,7 @@ videre har man at Schrödingerligningen for partikkelen er gitt ved
 
 \ovalbox{\begin{minipage}[t]{1\columnwidth}%
 \begin{equation}
--\frac{\hb^{2}}{2m}\frac{d^{2}\Psi}{dx^{2}}+\frac{1}{2}k_{f}x^{2}\Psi=E\Psi\label{eq:schrodinger harmonisk oscillator}
+-\frac{\hbar^{2}}{2m}\frac{d^{2}\Psi}{dx^{2}}+\frac{1}{2}k_{f}x^{2}\Psi=E\Psi\label{eq:schrodinger harmonisk oscillator}
 \end{equation}
 %
 \end{minipage}}
@@ -1141,7 +1099,7 @@ ha at $\Psi=0$ ved $x=\pm\infty$. De tillatte energinivåene er
 
 \ovalbox{\begin{minipage}[t]{1\columnwidth}%
 \begin{equation}
-E_{\nu}=\left(\upsilon+\frac{1}{2}\right)\hb\omega\qquad\omega=\sqrt{\frac{k_{f}}{m}}\qquad\upsilon=0,\,1,\,2,\,\dots\label{eq:energinivaaer harm. osc.}
+E_{\nu}=\left(\upsilon+\frac{1}{2}\right)\hbar\omega\qquad\omega=\sqrt{\frac{k_{f}}{m}}\qquad\upsilon=0,\,1,\,2,\,\dots\label{eq:energinivaaer harm. osc.}
 \end{equation}
 %
 \end{minipage}}
@@ -1149,7 +1107,7 @@ E_{\nu}=\left(\upsilon+\frac{1}{2}\right)\hb\omega\qquad\omega=\sqrt{\frac{k_{f}
 og man ser ut ifra Ligning \ref{eq:energinivaaer harm. osc.} at separasjonen
 mellom energinivåer er 
 \begin{equation}
-E_{\upsilon+1}-E_{\upsilon}=\hb\omega
+E_{\upsilon+1}-E_{\upsilon}=\hbar\omega
 \end{equation}
  som er lik for alle $\upsilon$ (Se Figur \ref{fig:Energinivaaer-i-en}).
 Energiseparasjonen er negliserbar for objekter med stor masse, men
@@ -1157,7 +1115,7 @@ har stor betydning for objekter med masse som et atom. Siden den laveste
 tillatte verdien av $\upsilon$ er 0, får man fra Ligning \ref{eq:energinivaaer harm. osc.}
 at en harmonisk oscillator har nullpunktsenergi\index{nullpunktsenergi}:
 \begin{equation}
-E_{0}=\frac{1}{2}\hb\omega
+E_{0}=\frac{1}{2}\hbar\omega
 \end{equation}
 
 
@@ -1180,7 +1138,7 @@ er en bølgefunksjon på formen
 
 \ovalbox{\begin{minipage}[t]{0.7\columnwidth}%
 \begin{equation}
-\Psi_{\upsilon}\left(x\right)=N_{\upsilon}H_{\upsilon}\left(y\right)e^{-y^{2}/2}\qquad y=\frac{x}{\alpha}\qquad\alpha=\left(\frac{\hb^{2}}{mk_{f}}\right)^{\frac{1}{4}}
+\Psi_{\upsilon}\left(x\right)=N_{\upsilon}H_{\upsilon}\left(y\right)e^{-y^{2}/2}\qquad y=\frac{x}{\alpha}\qquad\alpha=\left(\frac{\hbar^{2}}{mk_{f}}\right)^{\frac{1}{4}}
 \end{equation}
 %
 \end{minipage}}
@@ -1261,7 +1219,7 @@ forskjellige verdier av $\nu$}
 Forventningsverdien til en observabel $\Omega$ kan beregnes ved å
 evaluere integraler av typen 
 \begin{equation}
-\left\langle \Omega\right\rangle =\infint\Psi_{\upsilon}^{\star}\hat{\Omega}\Psi_{\upsilon}dx
+\left\langle \Omega\right\rangle =\int_{-\infty}^{\infty}\Psi_{\upsilon}^{\star}\hat{\Omega}\Psi_{\upsilon}dx
 \end{equation}
 
 
@@ -1270,7 +1228,7 @@ F.eks. har man at den gjennomsnittlige forflytningen fra likevektsposisjonen,
 $\left\langle x\right\rangle $, og kvadratet av den, $\left\langle x^{2}\right\rangle $,
 til en harmonisk oscillator med kvantetall $\nu$ er 
 \begin{equation}
-\left\langle x\right\rangle =0\qquad\left\langle x^{2}\right\rangle =\left(\upsilon+\frac{1}{2}\right)\frac{\hb}{\sqrt{mk_{f}}}
+\left\langle x\right\rangle =0\qquad\left\langle x^{2}\right\rangle =\left(\upsilon+\frac{1}{2}\right)\frac{\hbar}{\sqrt{mk_{f}}}
 \end{equation}
  Resultatet $\left\langle x\right\rangle =0$ viser at oscillatoren
 har like stor sansynlighet for å finne seg på begge sider av $x=0$.
@@ -1294,10 +1252,10 @@ sansynlighet er der vendepunktene er.}
 Den gjennomsnittlige potensielle energien til en oscillator\index{potensielle energien til en oscillator},
 forventningsverdien til $V=\frac{1}{2}kx^{2}$, blir da 
 \begin{equation}
-\left\langle V\right\rangle =\left\langle \frac{1}{2}k_{f}x^{2}\right\rangle =\frac{1}{2}\left(\upsilon+\frac{1}{2}\right)\hb\sqrt{\frac{k_{f}}{m}}=\frac{1}{2}\left(\upsilon+\frac{1}{2}\right)\hb\omega
+\left\langle V\right\rangle =\left\langle \frac{1}{2}k_{f}x^{2}\right\rangle =\frac{1}{2}\left(\upsilon+\frac{1}{2}\right)\hbar\sqrt{\frac{k_{f}}{m}}=\frac{1}{2}\left(\upsilon+\frac{1}{2}\right)\hbar\omega
 \end{equation}
  og fordi den totale energien i tilstanden med kvantetall $\nu$ er
-$\left(\nu+\frac{1}{2}\right)\hb\omega$ har man at 
+$\left(\nu+\frac{1}{2}\right)\hbar\omega$ har man at 
 \begin{equation}
 \left\langle V\right\rangle =\frac{1}{2}E_{\upsilon}
 \end{equation}
@@ -1390,7 +1348,7 @@ er derfor begrenset til verdiene
 
 \ovalbox{\begin{minipage}[t]{1\columnwidth}%
 \begin{equation}
-J_{z}=\pm\frac{hr}{\lambda}=\frac{m_{l}hr}{2\pi r}=\frac{m_{l}h}{2\pi}=m_{l}\hb\qquad m_{l}=l,\, l-1,\,\dots\,,\,-l
+J_{z}=\pm\frac{hr}{\lambda}=\frac{m_{l}hr}{2\pi r}=\frac{m_{l}h}{2\pi}=m_{l}\hbar\qquad m_{l}=l,\, l-1,\,\dots\,,\,-l
 \end{equation}
 %
 \end{minipage}}
@@ -1399,7 +1357,7 @@ Positive verdier av $m_{l}$ tilsvarer rotasjon med klokken rundt
 \emph{z}-aksen, negativ verdi mot klokken. Man får da videre at energien
 er begrenset til verdiene. BRUK HØYREHÅNDSREGEL! 
 \begin{equation}
-E=\frac{J_{z}^{2}}{2I}=\frac{m_{l}^{2}\hb^{2}}{2I}
+E=\frac{J_{z}^{2}}{2I}=\frac{m_{l}^{2}\hbar^{2}}{2I}
 \end{equation}
 
 
@@ -1424,11 +1382,11 @@ med x-aksen og $p_{y}$ tilsvarende for y-aksen.
 
 Operatoren for orbital vinkelmoment om z-aksen, $\hat{l}_{z}$ er
 \begin{equation}
-\hat{l}_{z}=\frac{\hb}{i}\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)
+\hat{l}_{z}=\frac{\hbar}{i}\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)
 \end{equation}
  som uttrykt ved \emph{r} og $\phi$ blir 
 \begin{equation}
-\hat{l}_{z}=\frac{\hb}{i}\frac{\partial}{\partial\phi}
+\hat{l}_{z}=\frac{\hbar}{i}\frac{\partial}{\partial\phi}
 \end{equation}
 
 
@@ -1452,7 +1410,7 @@ som helst på overflaten av en sfære med radius \emph{r}.
 
 Hamiltonoperatoren for bevegelse i tre dimensjoner: 
 \begin{equation}
-\hat{H}=-\frac{\hb^{2}}{2m}\nabla^{2}+V\qquad\nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
+\hat{H}=-\frac{\hbar^{2}}{2m}\nabla^{2}+V\qquad\nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
 \end{equation}
 
 
@@ -1462,7 +1420,7 @@ når den kan bevege seg fritt og radiusen er konstant. Bølgefunksjonen
 er derfor en funksjon av $\phi$ og $\theta$ (se Sfæriske koordinater
 i Matematikk delen). Schrödingerligningen er 
 \begin{equation}
--\frac{\hb^{2}}{2m}\nabla^{2}\Psi=E\Psi
+-\frac{\hbar^{2}}{2m}\nabla^{2}\Psi=E\Psi
 \end{equation}
  og med separasjon av variable får man ligningene 
 \begin{equation}
@@ -1507,7 +1465,7 @@ til partikkelen er begrenset av verdiene
 
 \ovalbox{\begin{minipage}[t]{1\columnwidth}%
 \begin{equation}
-E=l\left(l+1\right)\frac{\hb^{2}}{2I}\qquad l=0,\,1,\,2,\,\dots\label{eq:energi, partikkel paa sfaere}
+E=l\left(l+1\right)\frac{\hbar^{2}}{2I}\qquad l=0,\,1,\,2,\,\dots\label{eq:energi, partikkel paa sfaere}
 \end{equation}
 %
 \end{minipage}} 
@@ -1524,11 +1482,11 @@ Man får fra Ligning \ref{eq:energi, partikkel paa sfaere} og det
 klassiske forholdet $E=J^{2}/2I$ at størrelsen til vinkelmoment\index{vinkelmoment}et
 er kvantisert og lik 
 \begin{equation}
-\sqrt{l\left(l+1\right)}\hb\qquad l=0,1,2,\dots
+\sqrt{l\left(l+1\right)}\hbar\qquad l=0,1,2,\dots
 \end{equation}
  vi ser også at vinkelmomentet om z-aksen er kvantisert og har verdiene
 \begin{equation}
-l_{z}=m_{l}\hb\qquad m_{l}=l,\, l-1,\,\dots\,,-l
+l_{z}=m_{l}\hbar\qquad m_{l}=l,\, l-1,\,\dots\,,-l
 \end{equation}
 
 
@@ -1566,23 +1524,23 @@ et eksternt magnetisk / elektrisk felt) og kalles romkvantisering.
 Operatorene for orbitalt vinkelmoment\index{Operatorene for orbitalt vinkelmoment}
 er 
 \begin{equation}
-\begin{matrix}\hat{l}_{x}=\frac{\hb}{i}\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right)\\
-\hat{l}_{y}=\frac{\hb}{i}\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right)\\
-\hat{l}_{z}=\frac{\hb}{i}\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)
+\begin{matrix}\hat{l}_{x}=\frac{\hbar}{i}\left(y\frac{\partial}{\partial z}-z\frac{\partial}{\partial y}\right)\\
+\hat{l}_{y}=\frac{\hbar}{i}\left(z\frac{\partial}{\partial x}-x\frac{\partial}{\partial z}\right)\\
+\hat{l}_{z}=\frac{\hbar}{i}\left(x\frac{\partial}{\partial y}-y\frac{\partial}{\partial x}\right)
 \end{matrix}
 \end{equation}
 
 
 Disse operatorene kommuterer ikke med hverandre, man har at\index{kommutatorer, orbitalt vinkelmoment}:
 \begin{equation}
-\left[\hat{l}_{x},\hat{l}_{y}\right]=i\hb\hat{l}_{z}\qquad\left[\hat{l}_{y},\hat{l}_{z}\right]=i\hb\hat{l}_{x}\qquad\left[\hat{l}_{z},\hat{l}_{x}\right]=i\hb\hat{l}_{y}
+\left[\hat{l}_{x},\hat{l}_{y}\right]=i\hbar\hat{l}_{z}\qquad\left[\hat{l}_{y},\hat{l}_{z}\right]=i\hbar\hat{l}_{x}\qquad\left[\hat{l}_{z},\hat{l}_{x}\right]=i\hbar\hat{l}_{y}
 \end{equation}
  og derfor kan vi ikke spesifisere mere enn en komponent, med mindre
 $l=0$. Med andre ord: \emph{$l_{x},\, l_{y}$ og $l_{z}$ er komplementære
 observable\index{komplementære observable@\emph{komplementære observable}}.
 }Operatoren for kvadratet av størrelsen til vinkelmomentet er 
 \begin{equation}
-\hat{l}^{2}=\hat{l}_{x}^{2}+\hat{l}_{y}^{2}+\hat{l}_{z}^{2}=\hb^{2}\Lambda^{2}
+\hat{l}^{2}=\hat{l}_{x}^{2}+\hat{l}_{y}^{2}+\hat{l}_{z}^{2}=\hbar^{2}\Lambda^{2}
 \end{equation}
  og den \emph{kommuterer\index{kommuterer@\emph{kommuterer}}} med
 alle de tre komponentene: 
@@ -1610,8 +1568,8 @@ spinn vinkelmomentet fra orbitalt vinkelmoment bruker vi \emph{spinn
 kvantetallet }\textbf{\emph{s}}\emph{,}\textbf{\emph{ }}og \emph{spinn
 magnetisk kvantetall }\textbf{\emph{$m_{s}$}} for projeksjon på \emph{z}-aksen.
 
-Størrelsen til spinn vinkelmomentet er $\sqrt{s\left(s+1\right)}\hb$
-og komponenten $m_{s}\hb$ er begrenset til $2s+1$ verdier med 
+Størrelsen til spinn vinkelmomentet er $\sqrt{s\left(s+1\right)}\hbar$
+og komponenten $m_{s}\hbar$ er begrenset til $2s+1$ verdier med 
 \begin{equation}
 m_{s}=s,\, s-1,\,\dots\,,-s
 \end{equation}
@@ -1622,7 +1580,7 @@ tolkes som en faktisk spinn-bevegelse, det er heller en iboende egenskap,
 på samme måte som masse eller ladning.
 
 For et elektron er bare en verdi av \emph{s} tillatt, $s=\nicefrac{1}{2}$,
-som tilsvarer et halvt vinkelmoment av størrelsen $\sqrt{\nicefrac{3}{4}}\hb$.
+som tilsvarer et halvt vinkelmoment av størrelsen $\sqrt{\nicefrac{3}{4}}\hbar$.
 Dette spinnvinkelmomentet er en iboende egenskap til elektronet, på
 samme måte som massen og ladningen. Spinnet kan ha $2s+1$ orienteringer.
 Den ene orienteringen tilsvarer $m_{s}=+\nicefrac{1}{2}=\alpha=\uparrow$,
@@ -1693,7 +1651,7 @@ V=-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}
 er vakuumpermitiviteten. Hamiltonoperatoren for elektronet og en kjerne
 med masse $m_{N}$ er dermed 
 \begin{equation}
-\hat{H}=\hat{E}_{k,elektron}+\hat{E}_{k,kjerne}+\hat{V}=-\frac{\hb^{2}}{2m_{e}}\nabla_{e}^{2}-\frac{\hb^{2}}{2m_{N}}\nabla_{N}^{2}-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}
+\hat{H}=\hat{E}_{k,elektron}+\hat{E}_{k,kjerne}+\hat{V}=-\frac{\hbar^{2}}{2m_{e}}\nabla_{e}^{2}-\frac{\hbar^{2}}{2m_{N}}\nabla_{N}^{2}-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}
 \end{equation}
  der subskriptene på $\nabla^{2}$ indikerer derivasjon med hensyn
 til elektronets eller kjernens koordinater.
@@ -1706,7 +1664,7 @@ to ligninger. En for bevegelsen til atomet og en for bevegelsen til
 elektronet i forhold til elektronkjernen. Schrödingerligningen for
 bevegelsen til elektronet i forhold til kjernen er 
 \begin{equation}
--\frac{\hb}{2\mu}\nabla^{2}\psi-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}\psi=E\Psi\qquad\frac{1}{\mu}=\frac{1}{m_{e}}+\frac{1}{m_{N}}
+-\frac{\hbar}{2\mu}\nabla^{2}\psi-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}\psi=E\Psi\qquad\frac{1}{\mu}=\frac{1}{m_{e}}+\frac{1}{m_{N}}
 \end{equation}
  der deriveringen nå skjer med hensyn på elektronets koordinater i
 forhold til kjernen. $\mu$ kalles redusert masse\index{redusert masse}
@@ -1723,7 +1681,7 @@ og en angulær bølgefunksjon\index{angulær bølgefunksjon} $\left(Y\left(\theta,\p
 \end{equation}
  
 \begin{equation}
--\frac{\hb^{2}}{2\mu}\frac{d^{2}u}{dr^{2}}+V_{eff}u=Eu\qquad u\left(r\right)=rR\left(r\right)\,,\; V_{eff}=-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}+\frac{l\left(l+1\right)\hb^{2}}{2\mu r^{2}}
+-\frac{\hbar^{2}}{2\mu}\frac{d^{2}u}{dr^{2}}+V_{eff}u=Eu\qquad u\left(r\right)=rR\left(r\right)\,,\; V_{eff}=-\frac{Ze^{2}}{4\pi\varepsilon_{0}r}+\frac{l\left(l+1\right)\hbar^{2}}{2\mu r^{2}}
 \end{equation}
 
 
@@ -1733,14 +1691,14 @@ og en angulær bølgefunksjon\index{angulær bølgefunksjon} $\left(Y\left(\theta,\p
 De tillatte energiene til de tillatte løsnignene av den radielle bølgefunksjonen
 er gitt ved 
 \begin{equation}
-E_{n}=\frac{Z^{2}\mu e^{4}}{32\pi^{2}\varepsilon_{0}^{2}\hb^{2}n^{2}}\qquad n=1,\,2,\,3,\,\dots\label{eq:elektronenergi}
+E_{n}=\frac{Z^{2}\mu e^{4}}{32\pi^{2}\varepsilon_{0}^{2}\hbar^{2}n^{2}}\qquad n=1,\,2,\,3,\,\dots\label{eq:elektronenergi}
 \end{equation}
  Den radielle bølgefunksjonen avhenger på samme måte av verdiene av
 både \emph{n} og \emph{l} (ikke $m_{l}$). Bølgefunksjonen for et
 elektron med kvantetall \emph{n} og \emph{l} er den reelle funksjonen 
 
 \begin{equation}
-R_{n,l}\left(r\right)=N_{n,l}\rho^{l}L_{n+1}^{2l+1}\left(\rho\right)e^{-\rho/2}\qquad\rho=\frac{2Zr}{na_{0}}\qquad a_{0}=\frac{4\pi\varepsilon_{0}\hb^{2}}{m_{e}e^{2}}=52,9\, pm
+R_{n,l}\left(r\right)=N_{n,l}\rho^{l}L_{n+1}^{2l+1}\left(\rho\right)e^{-\rho/2}\qquad\rho=\frac{2Zr}{na_{0}}\qquad a_{0}=\frac{4\pi\varepsilon_{0}\hbar^{2}}{m_{e}e^{2}}=52,9\, pm
 \end{equation}
 
 
@@ -1795,9 +1753,9 @@ løsningene og spesifiserer vinkelmomentet til elektron\index{vinkelmomentet til 
 rundt kjernen. 
 \begin{itemize}
 \item Et elektron i en orbital med kvantetall \emph{l} har vinkelmoment
-gitt ved $J=\sqrt{l\left(l+1\right)}\hb$.
+gitt ved $J=\sqrt{l\left(l+1\right)}\hbar$.
 \item Et elektron i en orbital med kvantetall $m_{l}$ har en \emph{z}-komponent
-av vinkelmoment gitt ved $J_{z}=m_{l}\hb$.
+av vinkelmoment gitt ved $J_{z}=m_{l}\hbar$.
 \end{itemize}
 For å definere tilstanden til et elektron i et hydrogenisk atom fullstendig,
 må vi også spesifisere spinn-tilstanden.
@@ -2292,7 +2250,7 @@ Når det er flere elektroner til stede, må man ta hensyn til hvordan
 vinkelmomentene deres adderer til hverandre eller går imot hverandre.
 \emph{Det} \index{totalt orbital vinkelmomentkvanetall}\emph{totale
 orbital vinkelmomentkvanetallet}, $L$, gir oss størrelsen på vinkelmomentet
-gjennom $\sqrt{L\left(L+1\right)}\hb$. Det har $2L+1$ orienteringer
+gjennom $\sqrt{L\left(L+1\right)}\hbar$. Det har $2L+1$ orienteringer
 angitt av kvantetallet $M_{L}=L,\, L-1,\,\dots,\,-L$. Man har også
 ligndende for totalt spinnkvantetall $S$ og kvantetallet $M_{S}$,
 og det totale vonkelmomentkvantetallet $J$ og kvantetallet $M_{J}$. 
@@ -2658,7 +2616,7 @@ hele molekylet.
 Skal først se det aller enkleste molekylspesiet; $H_{2}^{+}$. Hamiltonoperatoren
 for et enkelt elektron i $H_{2}^{+}$ er 
 \begin{equation}
-\hat{H}=-\frac{\hb^{2}}{2m_{e}}\nabla_{1}^{2}+V\qquad V=-\frac{e^{2}}{4\pi\varepsilon_{0}}\left(\frac{1}{r_{A1}}+\frac{1}{r_{B1}}-\frac{1}{R}\right)
+\hat{H}=-\frac{\hbar^{2}}{2m_{e}}\nabla_{1}^{2}+V\qquad V=-\frac{e^{2}}{4\pi\varepsilon_{0}}\left(\frac{1}{r_{A1}}+\frac{1}{r_{B1}}-\frac{1}{R}\right)
 \end{equation}
 
 
@@ -4116,7 +4074,7 @@ er
 
 Når man tar hensyn til sentrifugal forvridning, får man at 
 \begin{equation}
-\tn\left(J+1\leftarrow J\right)=2\tilde{B}\left(J+1\right)-4\tilde{D}_{J}\left(J+1\right)^{3}
+\tilde{\nu}\left(J+1\leftarrow J\right)=2\tilde{B}\left(J+1\right)-4\tilde{D}_{J}\left(J+1\right)^{3}
 \end{equation}
 
 
@@ -4158,16 +4116,16 @@ derfor rotasjonelt Raman aktive.
 \end{minipage}}
 
 Brukt på ligningene for energi gir det bølgetallene til Stokes-linjene
-i spekteret ($\tn_{i}$ er bølgetallet til den innfallende strålingen)
+i spekteret ($\tilde{\nu}_{i}$ er bølgetallet til den innfallende strålingen)
 : 
 \begin{equation}
-\tn\left(J+2\leftarrow J\right)=\tn_{i}-\left\{ \tilde{F}\left(J+2\right)-\tilde{F}\left(J\right)\right\} =\tn_{i}-2\tilde{B}\left(2J+3\right)
+\tilde{\nu}\left(J+2\leftarrow J\right)=\tilde{\nu}_{i}-\left\{ \tilde{F}\left(J+2\right)-\tilde{F}\left(J\right)\right\} =\tilde{\nu}_{i}-2\tilde{B}\left(2J+3\right)
 \end{equation}
 
 
 og anti-Stokes linjene: 
 \begin{equation}
-\tn\left(J-2\leftarrow J\right)=\tn_{i}-\left\{ \tilde{F}\left(J\right)-\tilde{F}\left(J-2\right)\right\} =\tn_{i}+2\tilde{B}\left(2J-1\right)
+\tilde{\nu}\left(J-2\leftarrow J\right)=\tilde{\nu}_{i}-\left\{ \tilde{F}\left(J\right)-\tilde{F}\left(J-2\right)\right\} =\tilde{\nu}_{i}+2\tilde{B}\left(2J-1\right)
 \end{equation}
 
 
@@ -4215,7 +4173,7 @@ k_{f}=\left(\frac{d^{2}V}{dx^{2}}\right)_{0}
 Schrödingerligningen for den relative bevegelsen til to atomer med
 masse $m_{1}$ og $m_{2}$ med parabolsk potensiell energi er 
 \begin{equation}
--\frac{\hb^{2}}{2m_{eff}}\frac{d^{2}\psi}{dx^{2}}+\frac{1}{2}k_{f}x^{2}\psi=E\psi
+-\frac{\hbar^{2}}{2m_{eff}}\frac{d^{2}\psi}{dx^{2}}+\frac{1}{2}k_{f}x^{2}\psi=E\psi
 \end{equation}
  der $m_{eff}$ er den effektive massen: 
 \begin{equation}
@@ -4226,7 +4184,7 @@ m_{eff}=\frac{m_{1}m_{2}}{m_{1}+m_{2}}
 De tillatte \emph{vibrasjonsenerginivåene}\index{vibrasjonsenerginivåene}
 til et diatomisk molekyl er videre gitt ved 
 \begin{equation}
-E_{\upsilon}=\left(\upsilon+\frac{1}{2}\right)\hb\omega\qquad\omega=\sqrt{\frac{k_{f}}{m_{eff}}}\qquad\upsilon=0,\,1,\,2,\,\dots
+E_{\upsilon}=\left(\upsilon+\frac{1}{2}\right)\hbar\omega\qquad\omega=\sqrt{\frac{k_{f}}{m_{eff}}}\qquad\upsilon=0,\,1,\,2,\,\dots
 \end{equation}
 
 
@@ -4470,7 +4428,7 @@ kan uttrykkes med termsymboler.
 I et lineært molekyl, mer spesifikt et diatomært ett, Representerer
 en stor gresk bokstav det totale orbitale vinkelmomentet til elektronene
 rundt den internukleære aksen. Hvis denne komponenten til orbitalt
-vinkelmoment er $\Lambda\hb$ med $\Lambda=0,\,\pm1,\,\pm2,\,\dots$,
+vinkelmoment er $\Lambda\hbar$ med $\Lambda=0,\,\pm1,\,\pm2,\,\dots$,
 bruker vi følgende betegnelser: 
 \begin{equation}
 \begin{matrix}\left|\Lambda\right| &  & 0 & 1 & 2 & \dots\\
@@ -4484,7 +4442,7 @@ For å bestemme verdien av $L$ for atomenem måtte vi bruke Clebch-Gordan
 serien til å koble de individuelle vinkelmomentene. Prosedyren for
 å bestemme $\Lambda$ er mye enklere i diatomære molekyler fordi vi
 bare adderer verdiene til de individuelle komponentene til hvert elektron,
-$\lambda\hb$: 
+$\lambda\hbar$: 
 \begin{equation}
 \Lambda=\lambda_{1},\,\lambda_{2},\,\dots
 \end{equation}
