@@ -8,7 +8,6 @@
 \geometry{verbose,lmargin=3.5cm,rmargin=3.5cm}
 \usepackage{parskip}
 
-\usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
 
@@ -21,6 +20,8 @@
 \usepackage{url}
 \usepackage{graphicx}
 \usepackage{esint}
+
+
 
 \usepackage{makeidx}
 \makeindex
@@ -40,14 +41,30 @@
 %---------------------------------
 % Custom environment definitions
 %---------------------------------
-\theoremstyle{definition}
-\newtheorem{defn}{\protect\definitionname}[chapter]
 
-\theoremstyle{definition}
-\newtheorem{example}{\protect\examplename}[chapter]
+\usepackage[amsmath,thmmarks,framed]{ntheorem}
+\usepackage{framed}
+\usepackage{color}
+\definecolor{gray}{rgb}{0.6,0.6,0.6}
 
+% Examples environment
+\theoremstyle{break}
+\theoremframepreskip{1.5em}
+\theoremframepostskip{1.5em}
+\newframedtheorem{example}{\protect\examplename}[chapter]
+
+% Remarks environment
 \theoremstyle{remark}
+\theorempreskip{1.5em}
+\theorempostskip{1.5em}
 \newtheorem{rem}{\protect\remarkname}[chapter]
+
+% Definitions environment
+\theoremstyle{plain}
+\theoremframepreskip{1.5em}
+\theoremframepostskip{1.5em}
+\newframedtheorem{defn}{\protect\definitionname}
+
 
 %---------------------------------
 % Translations
