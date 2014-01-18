@@ -10,6 +10,6 @@
     }
     ],
     "settings": {
-      "TEXroot": "binding_kompendium.tex"
+      "TEXroot": "LaTeX-source/binding_kompendium.tex"
   }
 }
