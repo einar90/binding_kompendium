@@ -41,29 +41,35 @@
 %---------------------------------
 % Custom environment definitions
 %---------------------------------
-
-\usepackage[amsmath,thmmarks,framed]{ntheorem}
-\usepackage{framed}
-\usepackage{color}
-\definecolor{gray}{rgb}{0.6,0.6,0.6}
+\usepackage[amsmath,thmmarks,framed]{ntheorem} % Used to define environments
+\usepackage{framed} % -------------------------| Used for framed environments
+\usepackage{pstricks} % -----------------------| Used for shaded environments
+\definecolor{env-gray}{rgb}{0.9,0.9,0.9}
 
 % Examples environment
 \theoremstyle{break}
-\theoremframepreskip{1.5em}
+\theoremframepreskip{1em}
 \theoremframepostskip{1.5em}
-\newframedtheorem{example}{\protect\examplename}[chapter]
+\theoreminframepreskip{0.8em}
+\theoreminframepostskip{0.8em}
+\newframedtheorem{example}{\protect\examplename}[section]
 
 % Remarks environment
-\theoremstyle{remark}
+\theoremstyle{plain}
 \theorempreskip{1.5em}
 \theorempostskip{1.5em}
-\newtheorem{rem}{\protect\remarkname}[chapter]
+\newtheorem{remark}{\protect\remarkname}[section]
 
 % Definitions environment
 \theoremstyle{plain}
-\theoremframepreskip{1.5em}
-\theoremframepostskip{1.5em}
-\newframedtheorem{defn}{\protect\definitionname}
+\theoremframepreskip{\topsep}
+\theoremframepostskip{\topsep}
+\theoreminframepreskip{0.8em}
+\theoreminframepostskip{0.8em}
+\theoremindent=1em
+\theoremrightindent=1em
+\def\theoremframecommand{\colorbox{env-gray}} 
+\newshadedtheorem{definition}{\protect\definitionname}
 
 
 %---------------------------------
