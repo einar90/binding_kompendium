@@ -12,13 +12,13 @@
 \theoremframepostskip{1.5em}
 \theoreminframepreskip{0.8em}
 \theoreminframepostskip{0.8em}
-\newframedtheorem{example}{\protect\examplename}[section]
+\newframedtheorem{example}{\protect\examplename}[chapter]
 
 % Remarks environment
-\theoremstyle{plain}
+\theoremstyle{nonumberplain}
 \theorempreskip{1.5em}
 \theorempostskip{1.5em}
-\newtheorem{remark}{\protect\remarkname}[section]
+\newtheorem{remark}{\protect\remarkname}
 
 % Definitions environment
 \theoremstyle{plain}
@@ -29,7 +29,7 @@
 \theoremindent=1em
 \theoremrightindent=1em
 \def\theoremframecommand{\colorbox{env-gray}} 
-\newshadedtheorem{definition}{\protect\definitionname}
+\newshadedtheorem{definition}{\protect\definitionname}[chapter]
 
 
 %---------------------------------
